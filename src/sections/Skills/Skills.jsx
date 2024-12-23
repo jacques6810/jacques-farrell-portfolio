@@ -27,6 +27,11 @@ function Skills() {
         <SkillList src={checkMarkIcon} skill="Java" />
         <SkillList src={checkMarkIcon} skill="MySQL" />
       </div>
+      <hr />
+      <div className={styles.skillList}>
+        <SkillList src={checkMarkIcon} skill="Canva" />
+        <SkillList src={checkMarkIcon} skill="Figma" />
+      </div>
     </section>
   );
 }
