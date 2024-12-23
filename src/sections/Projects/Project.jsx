@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./ProjectStyles.module.css";
-import viberr from "../../assets/viberr.png";
-import freshBurger from "../../assets/fresh-burger.png";
-import hipsster from "../../assets/hipsster.png";
-import fitLift from "../../assets/fitlift.png";
+import pratama from "../../assets/pratama-2.png";
+import mangan from "../../assets/mangan.png";
+import campuscompass from "../../assets/campuscompass.png";
+import umnstory from "../../assets/umnstory.png";
 import ProjectCard from "../../common/ProjectCard";
 
 function Project() {
@@ -12,28 +12,28 @@ function Project() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
-          src={viberr}
-          link="https://github.com"
-          h3="Viberr"
-          p="Streaming App"
+          src={pratama}
+          link="https://pratamawheelstore.com/"
+          h3="Pratama Wheel Store"
+          p="Website Toko Velg"
         />
         <ProjectCard
-          src={freshBurger}
+          src={mangan}
           link="https://github.com"
-          h3="Fresh Burger"
-          p="Hamburger Restaurant"
+          h3="Mangan."
+          p="Diary Food App"
         />
         <ProjectCard
-          src={hipsster}
-          link="https://github.com"
-          h3="Hipsster"
-          p="Glasses Shop"
+          src={campuscompass}
+          link="https://www.figma.com/proto/Ln3Go48woKVWkdaw4TG1uw/Prototype-CampusCompass---Proyek-HCI?node-id=1-5&p=f&t=3SHwM4xfoF5Yi3rX-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=747%3A2787"
+          h3="CampusCompass"
+          p="Website Prototype Design"
         />
         <ProjectCard
-          src={fitLift}
-          link="https://github.com"
-          h3="FitLift"
-          p="Fitness App"
+          src={umnstory}
+          link="https://github.com/jacques6810/UTS_MAP_LAB"
+          h3="UMN Story"
+          p="Simple Social Media App"
         />
       </div>
     </section>
