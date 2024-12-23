@@ -33,8 +33,8 @@ textarea {
   color: var(--form-text-color);
 }
 
-input[name="name"],
-input[name="email"] {
+input[name="user_name"],
+input[name="user_email"] {
   font-family: "Roboto Mono", sans-serif;
 }
 

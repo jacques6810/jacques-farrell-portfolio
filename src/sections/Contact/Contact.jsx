@@ -1,17 +1,40 @@
+import React, { useRef } from "react";
 import styles from "./ContactStyles.module.css";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_g9dq3pp", "template_1hef4cq", form.current, {
+        publicKey: "Bd_pyXp_0nXAHYWBW",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          alert("Message sent successfully");
+          window.location.reload();
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <section id="contact" className={styles.container}>
       <h1 className="sectionTitle">Contact</h1>
-      <form action="">
+      <form ref={form} onSubmit={sendEmail}>
         <div className="formGroup">
           <label htmlFor="name" hidden>
             Name
           </label>
           <input
             type="text"
-            name="name"
+            name="user_name"
             id="name"
             placeholder="Name"
             required
@@ -23,7 +46,7 @@ function Contact() {
           </label>
           <input
             type="text"
-            name="email"
+            name="user_email"
             id="email"
             placeholder="Email"
             required
@@ -40,7 +63,7 @@ function Contact() {
             required
           ></textarea>
         </div>
-        <input className="hover btn" type="submit" value="Submit" />
+        <input className="hover btn" type="submit" value="Send" />
       </form>
     </section>
   );
