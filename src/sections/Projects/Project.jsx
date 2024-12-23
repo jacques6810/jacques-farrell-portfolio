@@ -19,7 +19,7 @@ function Project() {
         />
         <ProjectCard
           src={mangan}
-          link="https://github.com"
+          link="https://github.com/cowcow22/UTS_MAP_Mangan"
           h3="Mangan."
           p="Diary Food App"
         />
