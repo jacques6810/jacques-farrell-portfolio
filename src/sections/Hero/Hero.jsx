@@ -15,7 +15,7 @@ import twitterIcon from "../../assets/twitter-light.svg";
 import instagramIcon from "../../assets/instagram-light.svg";
 import githubIcon from "../../assets/github-light.svg";
 import linkedinIcon from "../../assets/linkedin-light.svg";
-import CV from "../../assets/CV-Jacques Farrell Dharma.pdf";
+import CV from "../../assets/Jacques Farrell Dharma - CV.pdf";
 import { useTheme } from "../../common/ThemeContext";
 
 function Hero() {
