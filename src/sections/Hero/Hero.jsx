@@ -46,7 +46,7 @@ function Hero() {
         <h1>
           Jacques <br /> Farrell D
         </h1>
-        <h2>Frontend Developer</h2>
+        <h2>Software Engineer</h2>
         <span>
           <a href="https://www.instagram.com/farrelldharma_/" target="_blank">
             <img src={instagramIcon} alt="Instagram Icon" />
