@@ -4,6 +4,7 @@ import pratama from "../../assets/pratama-2.png";
 import mangan from "../../assets/mangan.png";
 import campuscompass from "../../assets/campuscompass.png";
 import umnstory from "../../assets/umnstory.png";
+import bayucahayagemilang from "../../assets/bayucahayagemilang.png";
 import ProjectCard from "../../common/ProjectCard";
 
 function Project() {
@@ -34,6 +35,12 @@ function Project() {
           link="https://github.com/jacques6810/UTS_MAP_LAB"
           h3="UMN Story"
           p="Simple Social Media App"
+        />
+        <ProjectCard
+          src={bayucahayagemilang}
+          link="https://bayu-cahaya-gemilang-trial.netlify.app/"
+          h3="Bayu Cahaya Gemilang"
+          p="Company Profile Website"
         />
       </div>
     </section>
